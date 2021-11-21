@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  decentraland:
+    build: .
+    image: dcl
+    container_name: dcl
+    tty: true
+    volumes:
+      - ./app:/usr/src/app
+    ports: 
+      - "8000:8000"
